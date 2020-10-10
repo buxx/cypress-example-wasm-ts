@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 import { sum } from "../internal/wasm_pack_ts_cypress"
 
 describe("sum test", function () {
