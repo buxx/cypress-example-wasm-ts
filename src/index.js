@@ -10,8 +10,15 @@
 */
 
 // thus we need to use dynamic import and then use the imported module
+// we can set a single property on the window
 import('../internal/wasm_pack_ts_cypress').then(({ sum }) => {
   // expose the "sum" import on the window object
   // to be able to access it from the Cypress tests
   window.sum = sum
+})
+
+// or set all props
+import('../internal/wasm_pack_ts_cypress').then((exports) => {
+  // probably use the module name as key
+  window['../internal/wasm_pack_ts_cypress'] = exports
 })

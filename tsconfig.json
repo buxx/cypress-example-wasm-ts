@@ -2,7 +2,8 @@
   "compilerOptions": {
     "target": "ES2018",
     "module": "ESNext",
-    "moduleResolution": "Node"
+    "moduleResolution": "Node",
+    "types": ["cypress"]
   },
   "exclude": [
     "node_module"
