@@ -1,8 +1,0 @@
-{
-  "integrationFolder": "./src",
-  "testFiles": "**/*.spec.ts",
-  "supportFile": false,
-  "fixturesFolder": false,
-  "pluginsFile": false,
-  "baseUrl": "http://localhost:5000"
-}

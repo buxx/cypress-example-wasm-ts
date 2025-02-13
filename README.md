@@ -11,13 +11,13 @@
 2. Run to install dev dependencies `npm install`
 3. Build the Webpack bundle from [src/index.js](src/index.js) into [dist](dist) folder with `npm run build`. Note that our case is so simple we don't even need a webpack config file
 4. Start local server to serve [dist/index.html](dist/index.html) with `npm start`
-5. Open `localhost:5000` to see the Wasm file opened, and you can call `window.sum` to confirm WASM working
+5. Open `localhost:3000` to see the Wasm file opened, and you can call `window.sum` to confirm WASM working
 
 ![WASM working](images/wasm.png)
 
 ## Testing
 
-We are not loading the WASM bundle directly from the spec file, instead we load the `localhost:5000` that exposes the loaded WASM module from [src/index.js](src/index.js).
+We are not loading the WASM bundle directly from the spec file, instead we load the `localhost:3000` that exposes the loaded WASM module from [src/index.js](src/index.js).
 
 ```js
 // src/index.js
